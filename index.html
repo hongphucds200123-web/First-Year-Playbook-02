@@ -24,7 +24,8 @@
 <body class="bg-slate-950 text-slate-100 font-sans">
   <div class="fixed inset-0 -z-10">
     <div class="absolute inset-0 bg-gradient-to-b from-indigo-700/20 via-slate-950 to-slate-950"></div>
-    <div class="absolute inset-0 bg-grid opacity-60"></div>
+    <div class="absolute inset-0 bg-grid opacity-55"></div>
+    <div class="absolute inset-0 stars"></div>
     <div class="absolute inset-0 noise"></div>
     <div class="absolute -top-24 -left-32 w-[520px] h-[520px] rounded-full bg-indigo-500 glow"></div>
     <div class="absolute top-40 -right-40 w-[620px] h-[620px] rounded-full bg-fuchsia-500 glow"></div>
@@ -33,23 +34,25 @@
   <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/65 backdrop-blur">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
       <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center"><span class="text-lg">📘</span></div>
+        <div class="w-11 h-11 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center">
+          <span class="text-xl" aria-hidden="true">🟦</span>
+        </div>
         <div class="leading-tight">
           <div class="font-extrabold">First Year Playbook</div>
           <div class="text-xs text-slate-300">Định hướng học tập & thích nghi cho năm nhất</div>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a class="text-slate-200 hover:text-white" href="about.html">Giới thiệu</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm">
         <a class="text-slate-200 hover:text-white" href="problem.html">Vấn đề</a>
-        <a class="text-slate-200 hover:text-white" href="solution.html">Giải pháp</a>
-        <a class="text-slate-200 hover:text-white" href="structure.html">Cấu trúc</a>
+        <a class="text-slate-200 hover:text-white" href="deliverables.html">Sản phẩm</a>
         <a class="text-slate-200 hover:text-white" href="modules.html">Modules</a>
+        <a class="text-slate-200 hover:text-white" href="implementation.html">Triển khai</a>
+        <a class="text-slate-200 hover:text-white" href="evaluation.html">Đánh giá</a>
         <a class="text-slate-200 hover:text-white" href="faq.html">FAQ</a>
       </nav>
 
-      <a href="modules.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white text-slate-950 font-semibold shadow-soft hover:opacity-90 transition">
+      <a href="modules.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-white text-slate-950 font-bold shadow-soft hover:opacity-90 transition">
         Bắt đầu <span aria-hidden="true">→</span>
       </a>
     </div>
@@ -60,12 +63,12 @@
     <div class="grid lg:grid-cols-2 gap-10 items-start">
       <div>
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 text-xs text-slate-200">
-          <span aria-hidden="true">🎓</span><span>Dành cho SV năm nhất • phù hợp cả SV & giảng viên</span>
+          <span aria-hidden="true">🎓</span><span>Dành cho SV năm nhất (những tuần đầu đại học)</span>
         </div>
 
         <h1 class="mt-5 text-4xl md:text-5xl font-black tracking-tight leading-tight">
           First Year Playbook
-          <span class="block text-slate-200 font-extrabold mt-2">Multi-page template (headings-only)</span>
+          <span class="block text-slate-200 font-extrabold mt-2">Website học thuật — bản đồ học tập cho năm nhất</span>
         </h1>
 
         <p class="mt-5 text-slate-200/90 text-lg leading-relaxed">
@@ -73,8 +76,8 @@
         </p>
 
         <div class="mt-7 flex flex-wrap gap-3">
-          <a href="modules.html" class="px-5 py-3 rounded-2xl bg-white text-slate-950 font-bold shadow-soft hover:opacity-90 transition">Vào Modules</a>
-          <a href="structure.html" class="px-5 py-3 rounded-2xl border border-white/15 bg-white/5 text-white font-semibold hover:bg-white/10 transition">Xem cấu trúc</a>
+          <a href="modules.html" class="px-5 py-3 rounded-2xl bg-white text-slate-950 font-bold shadow-soft hover:opacity-90 transition">Xem 5 modules</a>
+          <a href="structure.html" class="px-5 py-3 rounded-2xl border border-white/15 bg-white/5 text-white font-semibold hover:bg-white/10 transition">Xem chuyên mục</a>
         </div>
       </div>
 
@@ -83,14 +86,14 @@
           <div class="p-6 md:p-8">
             <div class="text-sm text-slate-200">Thông điệp cốt lõi</div>
             <div class="mt-2 text-2xl md:text-3xl font-black leading-snug">
-              “Học đại học không khó.
-              <span class="block text-slate-200">Khó là không biết luật chơi.”</span>
+              “Đại học không khó.
+              <span class="block text-slate-200">Khó là do không biết cách học.”</span>
             </div>
 
             <div class="mt-6 grid gap-3">
-              <div class="panel rounded-2xl p-4"><div class="font-semibold">Pages</div><div class="text-sm text-slate-200 mt-1">About • Problem • Solution • Structure</div></div>
-              <div class="panel rounded-2xl p-4"><div class="font-semibold">Modules</div><div class="text-sm text-slate-200 mt-1">Module 1–5 (click → detail)</div></div>
-              <div class="panel rounded-2xl p-4"><div class="font-semibold">FAQ</div><div class="text-sm text-slate-200 mt-1">Quick help & hỏi đáp (placeholder)</div></div>
+              <div class="panel rounded-2xl p-4"><div class="font-semibold">Hub Sections</div><div class="text-sm text-slate-200 mt-1">About • Problem • Solution • Structure • Main Sections</div></div>
+              <div class="panel rounded-2xl p-4"><div class="font-semibold">Modules</div><div class="text-sm text-slate-200 mt-1">5 module titles (click → detail later)</div></div>
+              <div class="panel rounded-2xl p-4"><div class="font-semibold">Q&A</div><div class="text-sm text-slate-200 mt-1">FAQ library + Ask a question (placeholder)</div></div>
             </div>
           </div>
           <div class="border-t border-white/10 p-5 bg-slate-950/30 flex items-center justify-between">

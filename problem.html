@@ -24,7 +24,8 @@
 <body class="bg-slate-950 text-slate-100 font-sans">
   <div class="fixed inset-0 -z-10">
     <div class="absolute inset-0 bg-gradient-to-b from-indigo-700/20 via-slate-950 to-slate-950"></div>
-    <div class="absolute inset-0 bg-grid opacity-60"></div>
+    <div class="absolute inset-0 bg-grid opacity-55"></div>
+    <div class="absolute inset-0 stars"></div>
     <div class="absolute inset-0 noise"></div>
     <div class="absolute -top-24 -left-32 w-[520px] h-[520px] rounded-full bg-indigo-500 glow"></div>
     <div class="absolute top-40 -right-40 w-[620px] h-[620px] rounded-full bg-fuchsia-500 glow"></div>
@@ -33,23 +34,25 @@
   <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/65 backdrop-blur">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
       <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center"><span class="text-lg">📘</span></div>
+        <div class="w-11 h-11 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center">
+          <span class="text-xl" aria-hidden="true">🟦</span>
+        </div>
         <div class="leading-tight">
           <div class="font-extrabold">First Year Playbook</div>
           <div class="text-xs text-slate-300">Định hướng học tập & thích nghi cho năm nhất</div>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a class="text-slate-200 hover:text-white" href="about.html">Giới thiệu</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm">
         <a class="text-white font-semibold" href="problem.html">Vấn đề</a>
-        <a class="text-slate-200 hover:text-white" href="solution.html">Giải pháp</a>
-        <a class="text-slate-200 hover:text-white" href="structure.html">Cấu trúc</a>
+        <a class="text-slate-200 hover:text-white" href="deliverables.html">Sản phẩm</a>
         <a class="text-slate-200 hover:text-white" href="modules.html">Modules</a>
+        <a class="text-slate-200 hover:text-white" href="implementation.html">Triển khai</a>
+        <a class="text-slate-200 hover:text-white" href="evaluation.html">Đánh giá</a>
         <a class="text-slate-200 hover:text-white" href="faq.html">FAQ</a>
       </nav>
 
-      <a href="modules.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white text-slate-950 font-semibold shadow-soft hover:opacity-90 transition">
+      <a href="modules.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-white text-slate-950 font-bold shadow-soft hover:opacity-90 transition">
         Bắt đầu <span aria-hidden="true">→</span>
       </a>
     </div>
